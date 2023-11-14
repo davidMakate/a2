@@ -1,0 +1,18 @@
+{
+    "name": "NodeJsWebApplication",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "david",
+    "contributors": [
+    ],
+"dependencies": {},
+"scripts":{
+"start":"node public\/main.js"}
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>G C W</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> you made it bro </h1>
+        
+            <div style="width: 960px; margin: 10px; padding: 80px;">
+            <h3> Standard Bricks </h3><br>
+              <table>
+                  <td> 
+                      <a href="images/A.jpg" data-lightbox="mygallary">
+                          <img src="images/A.jpg" alt="" width="450"/>
+                      </a>
+                      <a href="images/A.jpg" data-lightbox="mygallary">
+                          <img src="images/A.jpg" alt="" width="450"/>
+                      </a>
+                      <a href="images/A.jpg" data-lightbox="mygallary">
+                          <img src="images/A.jpg" alt="" width="450"/>
+                      </a>
+                  </td>
+                  <td> 
+                      <img src="images/B.jpg" alt="" width="250"/>
+                  </td>
+                  <td> 
+                      <img src="images/G.jpg" alt="" width="150"/>
+                  </td>
+              </table>
+            <h3> Standard Bricks Price Calculator </h3>
+            <br>
+              <p>Price Quotation For Your Desired Quantities Below </p>
+              <br>
+              <input type="number" id="sBrics" placeholder="Enter Number of Bricks">
+              <button type="button" class="btn btn-style btn-primary" onclick="calculateBric(document.getElementById('sBrics').value)">Calculate Price of Bricks</button>
+            <script>
+                  function calculateBric (price) {
+                  var sbricRate = 0.14;
+                  var sbricAmount = price * sbricRate;
+                  document.getElementById('sbric').innerHTML = "Price of Bricks is: $" + sbricAmount;
+              }
+            </script>
+            <br>
+            <p id="sbric" style="color: red;"></p>
+        </div>
+    </body>
+</html>
